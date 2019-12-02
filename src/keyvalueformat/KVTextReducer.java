@@ -1,4 +1,4 @@
-package KeyValueFormat;
+package keyvalueformat;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

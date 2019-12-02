@@ -1,4 +1,4 @@
-package MyInputFormat;
+package myinputformat;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -38,8 +38,8 @@ public class SequenceFileDriver {
         job.setOutputValueClass(BytesWritable.class);
 
         // 5 设置输入输出路径
-        FileInputFormat.setInputPaths(job, new Path("F:\\inout\\input\\sequence"));
-        FileOutputFormat.setOutputPath(job, new Path("F:\\inout\\output\\sequence"));
+        FileInputFormat.setInputPaths(job, new Path("D:\\inout\\input\\sequence"));
+        FileOutputFormat.setOutputPath(job, new Path("D:\\inout\\output\\sequence"));
 
         // 6 提交job
         boolean result = job.waitForCompletion(true);

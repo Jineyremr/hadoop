@@ -29,8 +29,8 @@ public class WordcountDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         //设置输入和输出路径
-        FileInputFormat.setInputPaths(job,new Path("F:\\inout\\input\\wordcount"));
-        FileOutputFormat.setOutputPath(job,new Path("F:\\inout\\output\\wordcount"));
+        FileInputFormat.setInputPaths(job,new Path("D:\\inout\\input\\wordcount"));
+        FileOutputFormat.setOutputPath(job,new Path("D:\\inout\\output\\wordcount"));
         //提交
         boolean result = job.waitForCompletion(true);
         System.exit(result?0:1);

@@ -1,4 +1,4 @@
-package KeyValueFormat;
+package keyvalueformat;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -39,10 +39,10 @@ public class KVTextDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         //配置输入输出路径
-        FileInputFormat.setInputPaths(job,new Path("F:\\inout\\input\\kvformat"));
+        FileInputFormat.setInputPaths(job,new Path("D:\\inout\\input\\kvformat"));
         //将inputformat类设置为KV
         job.setInputFormatClass(KeyValueTextInputFormat.class);
-        FileOutputFormat.setOutputPath(job,new Path("F:\\inout\\output\\kvformat"));
+        FileOutputFormat.setOutputPath(job,new Path("D:\\inout\\output\\kvformat"));
         //提交
         boolean result = job.waitForCompletion(true);
         System.exit(result?0:1);

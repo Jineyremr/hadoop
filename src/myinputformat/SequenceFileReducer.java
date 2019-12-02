@@ -1,4 +1,4 @@
-package MyInputFormat;
+package myinputformat;
 
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
